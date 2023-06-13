@@ -4,7 +4,7 @@
             placeholder="Pesquise um personagem"
             v-model="consulta"
             @input="onSearchChange"
-            id="caixa"
+            id="texto"
         >   
         <ul class="lista">
             <li v-for="(item, key) in itens" :key="key" class="persona">
@@ -60,10 +60,10 @@
     }
 </script>
 <style scoped>
-    #caixa{
-        width: 100%;
-        padding: 12px 20px;
-        margin: 8px 0;
+    #texto{
+        width: 96%;
+        padding: 20px;
+        margin: 20px;
         box-sizing: border-box;
     }
     .lista
@@ -73,21 +73,18 @@
     }
     .lista .persona
     {
-        margin: 5px;
-        border-radius: 30px;
+        margin: 3px;
+        border-radius: 10px;
         background: #0044ff;
-        overflow: hidden;
         display: flex;
-        justify-content: center;
+        align-items: center ;
         text-align: center;
     }
     
     .lista .persona .conteudo a img
     {
-        display: flex;
-        position: relative;
         width: 100%;
-        height: 75%;
+        height: 70%;
         object-fit: contain;
     }
 </style>
