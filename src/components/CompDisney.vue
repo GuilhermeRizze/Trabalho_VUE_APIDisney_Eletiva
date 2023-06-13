@@ -18,7 +18,6 @@
         </ul>
 
 </template>
-
 <script>
     import api from '../services/api.js'
 
@@ -65,6 +64,7 @@
         padding: 20px;
         margin: 20px;
         box-sizing: border-box;
+        background: #899fff;
     }
     .lista
     {
@@ -79,12 +79,11 @@
         display: flex;
         align-items: center ;
         text-align: center;
-    }
-    
+        width: 200px;
+        height: 200px;    }
     .lista .persona .conteudo a img
     {
-        width: 100%;
-        height: 70%;
-        object-fit: contain;
+        width: 200px;
+        height: 140px;
     }
 </style>
